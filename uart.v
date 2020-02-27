@@ -69,7 +69,7 @@ assign led0_r = led0_r_r;
 
 assign uart_rxd_out = uart_rxd_out_r;
 
-// Send message
+// Update 9600 baud clock counter
 always @(posedge clk or posedge reset)
 begin
     if (reset)
