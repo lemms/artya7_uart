@@ -137,7 +137,7 @@ begin
                         if (send_bit == 4'd7) // Last bit
                             begin
                                 uart_rxd_out_r <= send_char[send_bit]; // Send char bit
-                                write_state_reg <= write_end; // Move to write state
+                                write_state_reg <= write_end; // Move to end state
                             end
                         else
                             begin
